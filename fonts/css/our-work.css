@@ -1,0 +1,146 @@
+.our-work {
+  margin-top: 100px;
+}
+
+.our-work__title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 58.51px;
+}
+
+.our-work__slides {
+  margin-top: 50px;
+  margin-bottom: 45px;
+  display: flex;
+}
+
+.our-work__slide {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: #333333;
+}
+
+.our-work__slide:hover {
+  color: #FF9900;
+  transition-duration: 200ms;
+}
+
+.our-work__slide:focus {
+  outline: #FF9900 solid 2px;
+  transition-duration: 200ms;
+}
+
+.our-work__slide:active {
+  color: #E1670E;
+  transition-duration: 200ms;
+}
+
+.our-work__slide:not(:last-child){
+  margin-right: 86px;
+}
+
+.our-work__information {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.our-work__information-part1 {
+  width: 43%;
+}
+
+.our-work__information::after {
+  content: "";
+  display: block;
+  width: 870px;
+  height: 460px;
+  background: url("../img/Rectangle 18.jpg");
+}
+
+.our-work__text-title {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.our-work__text {
+  padding-top: 8px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.our-work__button {
+  margin-top: 50px;
+  letter-spacing: 0;
+  word-spacing: 0;
+  font-size: 0;
+}
+
+.our-work__button1 {
+  margin-right: 32px;
+  height: 60px;
+  width: 175px;
+  background-color: #FF9900;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 19.5px;
+  letter-spacing: 0em;
+  text-align: center;
+  vertical-align: middle;
+  color: #FFFFFF;
+}
+
+.our-work__button1:hover {
+  background-color: #F7B045;
+  transition-duration: 200ms;
+}
+
+.our-work__button1:focus {
+  background-color: #F7B045;
+  transition-duration: 200ms;
+}
+
+.our-work__button1:active {
+  background-color: #E1670E;
+  transition-duration: 200ms;
+}
+
+.our-work__button2 {
+  height: 60px;
+  width: 147px;
+  border-radius: 0px;
+  border: 1px solid #333333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.5px;
+  letter-spacing: 0em;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.our-work__button2:hover {
+  background-color: #666666;
+  color: #fff;
+  transition-duration: 200ms;
+}
+
+.our-work__button2:focus {
+  background-color:  #666666;
+  color: #fff;
+  transition-duration: 200ms;
+}
+
+.our-work__button2:active {
+  background-color: #000000;
+  color: #fff;
+  transition-duration: 200ms;
+}

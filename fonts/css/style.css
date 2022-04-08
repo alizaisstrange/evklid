@@ -1,0 +1,85 @@
+.visually-hidden {
+  position: absolute !important;  /* Элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. !important позволяет повысить приоритет стиля  */
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7  Определяет область позиционированного элемента, в которой будет показано его содержимое. Все, что не помещается в эту область, будет обрезано.*/
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;  /* Внутренний отступ */
+  border: 0 !important;  /* Нулевая толщина границы  */
+  height: 1px !important;  /* Высота */
+  width: 1px !important;  /* Ширина */
+  overflow: hidden;  /* Отображается только область внутри элемента, остальное будет скрыто */
+}
+
+* {
+	margin: 0;  /* Внешний отступ */
+	padding: 0;
+	box-sizing: border-box;  /* Свойства width и height включают в себя значения полей и границ, но не отступов */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;  /* box-sizing наследует значение родителя  */
+}
+
+body {
+  font-family: "Montserrat", "sans-serif";  /* Семейство шрифта */
+  font-weight: 400;  /* Насыщенность шрифта */
+  margin: 0;
+  display: flex;  /* Механизм создания блоков. */
+  flex-direction: column;  /* Главная ось flex-контейнера направлена сверху вниз */
+  background-color: #fff;  /* Цвет фона */
+  font-size: 16px;  /* Размер шрифта */
+  width: 100%;  /* Минимальная ширина *//* при адаптиве только 100% (полоса прокрутки браузера зжирает пиксели)*/
+  color: black;  /* Цвет шрифта */
+  line-height: 1;  /* Расстояние между строками */
+}
+
+a {
+  text-decoration: none;  /* Отменяет все эффекты, в том числе установленные по умолчанию */
+  color: inherit;  /* inherit - ключевое слово, которое сообщает, что необходимо наследовать значение свойства у родительского элемента. */
+}
+
+address {
+  font-style: normal;
+}
+
+h1, h2, h3, p, ul {
+  padding: 0;
+  margin: 0;
+}
+
+h2, h3 {
+  font-weight: 500;
+}
+
+
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1770px;
+  margin-left: 75px;
+  margin-right: 75px;
+}
+
+button, input {
+  font: inherit;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;  /* Высота устанавливается исходя из содержимого элемента */
+}
+
